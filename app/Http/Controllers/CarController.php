@@ -19,6 +19,13 @@ class CarController extends Controller
             'cars' => $cars
         ]);
     }
+    public function allCars()
+    {
+        $cars = Car::all();
+        return response()->json([
+            'cars' => $cars
+        ]);
+    }
     public function getFourCars()
     {
 
